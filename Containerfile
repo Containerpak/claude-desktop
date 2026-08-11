@@ -12,4 +12,7 @@ RUN apt-get update && \
       -o /tmp/claude-desktop.deb && \
     echo '2bc6f0d4109bb43b307696e1128df53fbf393ef98f947a7869948642450245d7  /tmp/claude-desktop.deb' | sha256sum -c - && \
     dpkg-deb -x /tmp/claude-desktop.deb / && \
+    rm /usr/bin/claude-desktop && \
     cpak-clean-junk
+
+COPY claude-desktop /usr/bin/claude-desktop
