@@ -50,7 +50,7 @@ jobs:
           provenance: mode=max
           sbom: true
       - name: Verify exports
-        run: docker run --rm ghcr.io/containerpak/claude-desktop:main sh -c 'test -x /usr/bin/claude-desktop && test -f /usr/share/applications/com.anthropic.Claude.desktop && test -x /usr/bin/qemu-system-x86_64'
+        run: docker run --rm ghcr.io/containerpak/claude-desktop:main sh -c 'test -x /usr/local/bin/claude-desktop-cpak && test -f /usr/share/applications/com.anthropic.Claude.cpak.desktop && test ! -e /usr/bin/claude-desktop && test -x /usr/bin/qemu-system-x86_64'
 
       - uses: sigstore/cosign-installer@d7543c93d881b35a8faa02e8e3605f69b7a1ce62
 
