@@ -11,5 +11,5 @@ cpak install github.com/containerpak/claude-desktop
 Start Claude from the application menu or run:
 
 ```bash
-cpak run github.com/containerpak/claude-desktop claude-desktop
+cpak run github.com/containerpak/claude-desktop claude-desktop-cpak
 ```
