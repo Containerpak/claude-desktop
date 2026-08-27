@@ -1,27 +1,34 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Claude",
   "description": "Use Claude, Claude Code and local desktop features from one application.",
   "version": "1.37937.3",
-  "image": "ghcr.io/containerpak/claude-desktop:main",
-  "runtime_sources": [{"name": "claude-desktop_1.37937.3_amd64.deb", "url": "https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/claude-desktop_1.37937.3_amd64.deb", "sha256": "53590c5725fb3487299f940f5b89d55182b0faee14ca1bf3e35badae0f61135f", "size": 165280756, "installer": "dpkg"}],
-  "binaries": ["/usr/local/bin/claude-desktop-cpak"],
-  "desktop_entries": ["/usr/share/applications/com.anthropic.Claude.cpak.desktop"],
+  "image": "ghcr.io/containerpak/claude-desktop@sha256:707fb401e2ed933f8ec80f219f5ae7e463d554768a1466149e572b03e482aa78",
+  "runtime_sources": [
+    {
+      "name": "claude-desktop_1.37937.3_amd64.deb",
+      "url": "https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/claude-desktop_1.37937.3_amd64.deb",
+      "sha256": "53590c5725fb3487299f940f5b89d55182b0faee14ca1bf3e35badae0f61135f",
+      "size": 165280756,
+      "installer": "dpkg"
+    }
+  ],
+  "binaries": [
+    "/usr/local/bin/claude-desktop-cpak"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/com.anthropic.Claude.cpak.desktop"
+  ],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": true,
     "deviceShm": true,
@@ -33,7 +40,12 @@
     "deviceAll": false,
     "notification": true,
     "openURI": true,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -41,7 +53,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": ["xdg-open"]
+    "asRoot": false
   }
 }
