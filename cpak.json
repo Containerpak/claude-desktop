@@ -3,14 +3,14 @@
   "manifest_version": "3.0",
   "name": "Claude",
   "description": "Use Claude, Claude Code and local desktop features from one application.",
-  "version": "1.37937.3",
+  "version": "1.40609.0",
   "image": "ghcr.io/containerpak/claude-desktop@sha256:ffc4dd36449cdd1f4a6fabfa91cb7576ff7894547c20bd0946394d9e2b4eaf13",
   "runtime_sources": [
     {
-      "name": "claude-desktop_1.37937.3_amd64.deb",
-      "url": "https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/claude-desktop_1.37937.3_amd64.deb",
-      "sha256": "53590c5725fb3487299f940f5b89d55182b0faee14ca1bf3e35badae0f61135f",
-      "size": 165280756,
+      "name": "claude-desktop_1.40609.0_amd64.deb",
+      "url": "https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/claude-desktop_1.40609.0_amd64.deb",
+      "sha256": "a96e96ff8eb4d4d7ffa785aba7fc23f8684b12ac83ed2ef4060f0f09f4177a98",
+      "size": 166561632,
       "installer": "dpkg"
     }
   ],
