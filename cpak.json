@@ -4,7 +4,7 @@
   "name": "Claude",
   "description": "Use Claude, Claude Code and local desktop features from one application.",
   "version": "1.52386.6",
-  "image": "ghcr.io/containerpak/claude-desktop@sha256:441f8f63c31edf8e1bc825e220ed7adafa8bfffb97dacbf77bdd821dc043eb5b",
+  "image": "ghcr.io/containerpak/claude-desktop@sha256:5b2135ae889f4a1f8aee3d9e15936bfb8b553f43d2387c3c6fb47622c839ac4f",
   "runtime_sources": [
     {
       "name": "claude-desktop_1.52386.6_amd64.deb",
